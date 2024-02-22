@@ -1,7 +1,5 @@
-import {LastUpdated} from '@/components/LastUpdated';
+import {LastUpdated} from '@/app/suppress-hydration-warning/_components/LastUpdated';
 
-export default async function SuppressHydrationWarning() {
-  await new Promise((resolve) => setTimeout(resolve, 2_000));
-
+export default function SuppressHydrationWarning() {
   return <LastUpdated />;
 }

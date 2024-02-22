@@ -1,8 +1,6 @@
 'use client';
 
-function getLastUpdated() {
-  return new Date();
-}
+import {getLastUpdated} from '@/tools/get-last-update';
 
 export function LastUpdated() {
   const date = getLastUpdated();
